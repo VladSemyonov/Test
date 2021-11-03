@@ -1,0 +1,7 @@
+.git
+.cache
+node_modules
+public
+static
+.eslintrc.js
+gatsby-browser.js

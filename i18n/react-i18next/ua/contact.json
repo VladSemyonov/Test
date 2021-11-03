@@ -1,0 +1,21 @@
+{
+  "companyCountry": "Україна",
+  "writeUsAMessage": "Напишіть нам повідомлення",
+  "yourName": "Ваше ім'я",
+  "phoneNumber": "Номер телефону",
+  "emailAddress": "Адреса ел. пошти",
+  "writeMessage": "Напишіть повідомлення",
+  "submit": "Надіслати",
+  "submitting": "Відправлення...",
+  "contactUsSuccess": "Повідомлення було успішно відправлено!",
+  "contactUsError": "Помилка. Повідомлення не відправлено.",
+  "pageHeader": "Контакти",
+  "onTouch": "Будь на зв`язку",
+  "callWithUs": "Зв`язатися з нами",
+  "formName": "Ім`я",
+  "formMessage": "Повідомлення",
+  "locateUs": "Знайди нас",
+  "formButton": "Відправити",
+  "sendMore": "Надіслати ще?",
+  "formEmail": "Електронна пошта"
+}

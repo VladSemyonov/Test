@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap");
+
+:root {
+  --thm-font: "Barlow", sans-serif;
+  --heading-font: "Barlow";
+  --thm-base: #eddd5e;
+  --thm-base-rgb: 237, 221, 94;
+  --thm-primary: #5b8c51;
+  --thm-primary-rgb: 91, 140, 81;
+  --thm-black: #404a3d;
+  --thm-black-rgb: 64, 74, 61;
+  --thm-gray: #eceeef;
+}
+
+body {
+  font-family: var(--thm-font);
+  color: #747673;
+  font-size: 1rem;
+  line-height: 34px;
+  font-weight: 400;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+#footer-link {
+  font-family: "Barlow", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+a:active,
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-family: var(--heading-font);
+  font-weight: 700;
+}
+
+.appBtn {
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  outline: none;
+  background-color: var(--thm-base);
+  font-size: 1.125rem;
+  color: var(--thm-black);
+  font-weight: 500;
+  padding: 13px 40px;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: var(--thm-primary);
+    color: #ffffff;
+  }
+}
+
+.withSubmenu {
+  ul {
+    display: none;
+
+    li {
+      position: relative;
+      text-align: left;
+      background: transparent;
+      padding: 15px;
+      z-index: 2;
+      font-size: 1.125rem;
+      color: #3c3c3c;
+
+      span {
+        padding-left: 10px;
+      }
+
+      &:hover {
+        background-color: #0000000d;
+      }
+    }
+  }
+
+  .triangleBox {
+    display: none;
+  }
+
+  &:hover {
+    ul {
+      position: absolute;
+      top: 54px;
+      right: 0px;
+      display: block;
+      background: #fff;
+      // width: 160px;
+      z-index: 1;
+      border-radius: 5px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .triangleBox {
+      display: block;
+      min-width: 100%;
+      position: absolute;
+      top: 40px;
+      right: 0;
+      z-index: 10;
+      height: 14px;
+      overflow: hidden;
+      // width: 30px;
+      background: transparent;
+
+      .triangle {
+        position: absolute;
+        top: 0;
+        right: 12px;
+        z-index: 10;
+        height: 14px;
+        overflow: hidden;
+        width: 30px;
+        background: transparent;
+
+        &:after {
+          content: "";
+          display: block;
+          z-index: 20;
+          width: 15px;
+          transform: rotate(45deg) translateY(0px) translatex(10px);
+          height: 15px;
+          background: #fff;
+          border-radius: 2px 0px 0px 0px;
+        }
+      }
+    }
+
+    .arrowIcon {
+      opacity: 1;
+    }
+  }
+}
+
+.triangleBox {
+  width: 100%;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  z-index: 10;
+  height: 14px;
+  overflow: hidden;
+  // width: 30px;
+  background: transparent;
+
+  .triangle {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    z-index: 10;
+    height: 14px;
+    overflow: hidden;
+    width: 30px;
+    background: transparent;
+
+    &:after {
+      content: "";
+      display: block;
+      z-index: 20;
+      width: 15px;
+      transform: rotate(45deg) translateY(0px) translatex(10px);
+      height: 15px;
+      background: #fff;
+      border-radius: 2px 0px 0px 0px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}

@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  #footer-link li {
+    height: 30px;
+  }
+  .slide:hover {
+    cursor: pointer;
+  }
+  .infra_arrow {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    height: auto;
+    position: relative;
+    right: 12px;
+    width: 100px;
+    background: transparent;
+  }
+
+  .infra_arrow::before {
+    content: "";
+    width: 25px;
+    height: 2px;
+    background: #ef435d;
+    position: absolute;
+    margin-top: -1px;
+    right: 24px;
+    transition: all 0.6s ease;
+    -webkit-transform: translate3d(30%, 0, 0);
+    transform: translate3d(30%, 0, 0);
+    visibility: visible;
+  }
+
+  .infra_arrow::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-color: transparent transparent transparent #ef435d;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    position: absolute;
+    margin-top: -5px;
+    right: 20px;
+    transition: all 0.4s ease;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  .slide:hover .infra_arrow::before {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    width: 50px;
+  }
+
+  .slide:hover .infra_arrow::after {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .gradient-shadow::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 4px;
+    background-image: linear-gradient(
+      90deg,
+      transparent,
+      hsla(0, 0%, 51%, 0.75),
+      transparent
+    );
+    z-index: 100;
+  }
+  .gradient-shadow-down::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 3px;
+    background-image: linear-gradient(
+      90deg,
+      transparent,
+      hsla(0, 0%, 51%, 0.75),
+      transparent
+    );
+    z-index: 100;
+  }
+  .hr-style {
+    color: #4a4a4a;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: block;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(
+      90deg,
+      transparent,
+      hsla(0, 0%, 51%, 0.75),
+      transparent
+    );
+  }
+  .animated-link {
+    box-shadow: none;
+    transition: box-shadow 0.15s;
+  }
+  .animated-link:hover {
+    box-shadow: inset 0 -3px #fff;
+  }
+  .active-link {
+    box-shadow: inset 0 -3px #fff;
+  }
+  .svg-white:hover img {
+    filter: brightness(0) invert(1);
+  }
+  .my_container{
+    max-width: 1250px;
+  }
+}
